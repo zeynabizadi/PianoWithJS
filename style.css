@@ -135,6 +135,24 @@ h2 {
   opacity: 1;
 }
 
+.rotate {
+  background-color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.rotate img {
+  width: 180px;
+}
+
 @media screen and (max-width: 800px) and (orientation: portrait) {
   h1,
   h2,
@@ -142,9 +160,14 @@ h2 {
   .nowplaying,
   .keys,
   .key,
+  .sharp,
   .playing,
   .hints {
     display: none;
+  }
+
+  .rotate{
+    display: flex;
   }
 }
 @media screen and (max-width: 1080px) and (orientation: landscape) {
